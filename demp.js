@@ -10,7 +10,7 @@ app.get('/',function(req,res)
 
 app.get('/auth', function(req, res)
     {
-        const uri = "mongodb+srv://<admin>:<admin>@cluster0.wqxas1z.mongodb.net/?retryWrites=true&w=majority";
+        const uri = "mongodb+srv://<admin>:<password>@cluster0.wqxas1z.mongodb.net/?retryWrites=true&w=majority";
         const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
         // console.log(req);
         // res.send("Authenticating the user"+req);
